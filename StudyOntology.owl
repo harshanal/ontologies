@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-25 "http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25#"
+     xml:base="http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:untitled-ontology-25="http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25#DataSource -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-25;DataSource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25#Exposure -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-25;Exposure">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25#Outcome -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-25;Outcome">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25#POC_Name -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-25;POC_Name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25#POC_Period -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-25;POC_Period"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25#Population -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-25;Population">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25#Process_Parameters -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-25;Process_Parameters"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25#Study_Desgin -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-25;Study_Desgin"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25#Benefit_Study -->
+
+    <owl:Class rdf:about="&untitled-ontology-25;Benefit_Study">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-25;POC_Study"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25#Burden_of_Disease_Study -->
+
+    <owl:Class rdf:about="&untitled-ontology-25;Burden_of_Disease_Study">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-25;POC_Study"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25#Coverage_Study -->
+
+    <owl:Class rdf:about="&untitled-ontology-25;Coverage_Study">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-25;POC_Study"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25#POC_Study -->
+
+    <owl:Class rdf:about="&untitled-ontology-25;POC_Study"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25#Risk_Study -->
+
+    <owl:Class rdf:about="&untitled-ontology-25;Risk_Study">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-25;POC_Study"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-25#InfluenzaPOC -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-25;InfluenzaPOC">
+        <Outcome>Influenza vaccination (all brands/products)</Outcome>
+        <POC_Period>1 Year</POC_Period>
+        <Population>those targeted for influenza vaccination in a given population by age, comorbidities, target risk groups (i.e. pregnant women)</Population>
+        <DataSource>Surveillance</DataSource>
+        <POC_Name>InfluenzaPOC</POC_Name>
+        <Outcome>effectiveness outcomes</Outcome>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

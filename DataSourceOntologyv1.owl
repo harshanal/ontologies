@@ -1,0 +1,635 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-24"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/hl0010/ontologies/2015/0/untitled-ontology-24">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="#BCG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diphteria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disease_Registry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HPV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hepatitis_A"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hepatitis_B"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Immunisation_Register"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Influenza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mumps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pertusis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poliomyelitis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rotavirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rubella"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shingles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Surveillance_Database"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tetanus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VaccinePreventableDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Varicella"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMetaItem"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ATCLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AccessCharge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ActivePopulationSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AllowIndustrySponsoredStudies"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AuditableByThirdParties"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#BodySiteVaccination"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#BrandName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ClinicalDataAndFollowupTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CoverageType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DataAccessProperties"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DataAccessWrittenPolicy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DataCollectionFrequency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DataGovernanceCommittee"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DataSourceCharacteristics"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DataSourceName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DataSourceStartDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DataSourceType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DateOfVaccination"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EthicsCommittee"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#FacilityAdministered"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#GeographicalCoverage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LotNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Manufacturer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PatientBasedLinkage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Phone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PopulationCharacteristics"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PrescriptionAndClinicalData"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ScientificContact"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TotalRegisteredChildren"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TotalRegisteredSubjects"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#VaccineInformation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RCGP"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#BCG"/>
+        <Class IRI="#VaccinePreventableDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diphteria"/>
+        <Class IRI="#VaccinePreventableDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disease_Registry"/>
+        <Class IRI="#DataSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HPV"/>
+        <Class IRI="#VaccinePreventableDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hepatitis_A"/>
+        <Class IRI="#VaccinePreventableDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hepatitis_B"/>
+        <Class IRI="#VaccinePreventableDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Immunisation_Register"/>
+        <Class IRI="#DataSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Influenza"/>
+        <Class IRI="#VaccinePreventableDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measles"/>
+        <Class IRI="#VaccinePreventableDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mumps"/>
+        <Class IRI="#VaccinePreventableDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pertusis"/>
+        <Class IRI="#VaccinePreventableDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poliomyelitis"/>
+        <Class IRI="#VaccinePreventableDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rotavirus"/>
+        <Class IRI="#VaccinePreventableDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rubella"/>
+        <Class IRI="#VaccinePreventableDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shingles"/>
+        <Class IRI="#VaccinePreventableDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surveillance_Database"/>
+        <Class IRI="#DataSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tetanus"/>
+        <Class IRI="#VaccinePreventableDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Varicella"/>
+        <Class IRI="#VaccinePreventableDisease"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Surveillance_Database"/>
+        <NamedIndividual IRI="#RCGP"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ActivePopulationSize"/>
+        <NamedIndividual IRI="#RCGP"/>
+        <Literal datatypeIRI="&xsd;integer">813693</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ClinicalDataAndFollowupTime"/>
+        <NamedIndividual IRI="#RCGP"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Country"/>
+        <NamedIndividual IRI="#RCGP"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">United Kingdom</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CoverageType"/>
+        <NamedIndividual IRI="#RCGP"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">National</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataCollectionFrequency"/>
+        <NamedIndividual IRI="#RCGP"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Weekly</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataSourceType"/>
+        <NamedIndividual IRI="#RCGP"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">communicable / infectious disease surveillance</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataSourceType"/>
+        <NamedIndividual IRI="#RCGP"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Primary health care</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfVaccination"/>
+        <NamedIndividual IRI="#RCGP"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#FacilityAdministered"/>
+        <NamedIndividual IRI="#RCGP"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PrescriptionAndClinicalData"/>
+        <NamedIndividual IRI="#RCGP"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TotalRegisteredChildren"/>
+        <NamedIndividual IRI="#RCGP"/>
+        <Literal datatypeIRI="&xsd;integer">247893</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TotalRegisteredSubjects"/>
+        <NamedIndividual IRI="#RCGP"/>
+        <Literal datatypeIRI="&xsd;integer">1035018</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#Disease_Registry"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#Immunisation_Register"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#Surveillance_Database"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#BCG"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#Diphteria"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#HPV"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#Hepatitis_A"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#Hepatitis_B"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#Influenza"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#Measles"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#Mumps"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#Pertusis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#Poliomyelitis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#Rotavirus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#Rubella"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#Shingles"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#Tetanus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaItem"/>
+        <Class IRI="#Varicella"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ATCLevel"/>
+        <DataProperty IRI="#VaccineInformation"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AccessCharge"/>
+        <DataProperty IRI="#DataAccessProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ActivePopulationSize"/>
+        <DataProperty IRI="#PopulationCharacteristics"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Address"/>
+        <DataProperty IRI="#ScientificContact"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AllowIndustrySponsoredStudies"/>
+        <DataProperty IRI="#DataAccessProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AuditableByThirdParties"/>
+        <DataProperty IRI="#DataAccessProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#BodySiteVaccination"/>
+        <DataProperty IRI="#VaccineInformation"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#BrandName"/>
+        <DataProperty IRI="#VaccineInformation"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ClinicalDataAndFollowupTime"/>
+        <DataProperty IRI="#PatientBasedLinkage"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Country"/>
+        <DataProperty IRI="#GeographicalCoverage"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#CoverageType"/>
+        <DataProperty IRI="#GeographicalCoverage"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DataAccessProperties"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DataAccessWrittenPolicy"/>
+        <DataProperty IRI="#DataAccessProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DataCollectionFrequency"/>
+        <DataProperty IRI="#DataSourceCharacteristics"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DataGovernanceCommittee"/>
+        <DataProperty IRI="#DataAccessProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DataSourceName"/>
+        <DataProperty IRI="#DataSourceCharacteristics"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DataSourceStartDate"/>
+        <DataProperty IRI="#DataSourceCharacteristics"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DataSourceType"/>
+        <DataProperty IRI="#DataSourceCharacteristics"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DateOfVaccination"/>
+        <DataProperty IRI="#VaccineInformation"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Email"/>
+        <DataProperty IRI="#ScientificContact"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EthicsCommittee"/>
+        <DataProperty IRI="#DataAccessProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#FacilityAdministered"/>
+        <DataProperty IRI="#VaccineInformation"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#LotNumber"/>
+        <DataProperty IRI="#VaccineInformation"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Manufacturer"/>
+        <DataProperty IRI="#VaccineInformation"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="#ScientificContact"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Phone"/>
+        <DataProperty IRI="#ScientificContact"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#PrescriptionAndClinicalData"/>
+        <DataProperty IRI="#PatientBasedLinkage"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TotalRegisteredChildren"/>
+        <DataProperty IRI="#PopulationCharacteristics"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TotalRegisteredSubjects"/>
+        <DataProperty IRI="#PopulationCharacteristics"/>
+    </SubDataPropertyOf>
+    <DataPropertyRange>
+        <DataProperty IRI="#ATCLevel"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#AccessCharge"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ActivePopulationSize"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#AllowIndustrySponsoredStudies"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#AuditableByThirdParties"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#BodySiteVaccination"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#BrandName"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ClinicalDataAndFollowupTime"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Country"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CoverageType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DataAccessWrittenPolicy"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DataCollectionFrequency"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DataGovernanceCommittee"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DataSourceName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DataSourceStartDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DataSourceType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DateOfVaccination"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Email"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EthicsCommittee"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#FacilityAdministered"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#LotNumber"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Manufacturer"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Phone"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PrescriptionAndClinicalData"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TotalRegisteredChildren"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TotalRegisteredSubjects"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
